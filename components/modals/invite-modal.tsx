@@ -63,7 +63,7 @@ export const InviteModal = () => {
                 <div className="p-6">
                     <Label className="uppercase text-xs font-bold text-zinc-500 dark:text-secondary/70">Server invite link</Label>
                     <div className="flex items-center mt-2 gap-x-2">
-                        <Input disabled={isLoading} className="bg-zinc-300/50 border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0" value={inviteUrl} />
+                        <Input readOnly disabled={isLoading} className="bg-zinc-300/50 border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0" value={inviteUrl} />
                         <Button
                             disabled={isLoading}
                             onClick={onCopy}
